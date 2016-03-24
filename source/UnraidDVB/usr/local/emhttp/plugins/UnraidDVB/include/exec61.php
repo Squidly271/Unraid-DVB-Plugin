@@ -84,7 +84,7 @@ case 'build_buttons':
             download_url($mediaTypes['imageURL']."/unraid-media",$description);
  
             if ( is_file($description) ) {
-              $mediaTypes['imageDescription'] = $tempVar = parse_ini_file($description); 
+              $tempVar = parse_ini_file($description); 
 			  $mediaTypes['imageDescription'] = "This will install the ".$tempVar['base']." unRAID DVB build with V".$tempVar['driver']. " drivers";
             } else {
               $mediaTypes['imageDescription'] = "This will install stock unRAID";
